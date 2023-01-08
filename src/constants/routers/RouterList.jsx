@@ -1,15 +1,11 @@
-import React from "react";
 import { Routes, Route } from "react-router-dom";
-import About from "../../components/about";
-import Experience from "../../components/experience";
-import Skills from "../../components/skills";
-import { IData } from "../../type/types.tsx";
+import About from "../../pages/about";
+import Experience from "../../pages/experience";
+import Skills from "../../pages/skills";
+import PortfolioList from "../../pages/portfolio";
+import PortfolioItem from "../../pages/portfolioItem";
 
-interface RouterListProps {
-  data: IData;
-}
-
-const RouterList: FC<RouterListProps> = ({ data }) => {
+const RouterList = ({ data, portfolio }) => {
   return (
     <Routes>
       <Route path="/" element={<About data={data?.about} />} />
@@ -18,6 +14,19 @@ const RouterList: FC<RouterListProps> = ({ data }) => {
         element={<Experience data={data?.experience} />}
       />
       <Route path="skills" element={<Skills data={data?.skills} />} />
+      <Route
+        path="portfolio"
+        element={
+          <PortfolioList
+            data={portfolio?.portfolioList}
+            tags={portfolio?.tagsList}
+          />
+        }
+      />
+      <Route
+        path="portfolio/:id"
+        element={<PortfolioItem data={data?.portfolio} />}
+      />
       <Route>404 Not Found!</Route>
     </Routes>
   );

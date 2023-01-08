@@ -1,11 +1,6 @@
-import React, { FC } from "react";
+import React from "react";
 
-import { IData } from "../../type/types";
-interface ExperienceProps {
-  data: IData;
-}
-
-const Experience: FC<ExperienceProps> = ({data}) => {
+const Experience = ({ data }) => {
   return (
     <div className="container flex-auto">
       <div className="m-4 p-6 shadow-2xl shadow-gray-200">

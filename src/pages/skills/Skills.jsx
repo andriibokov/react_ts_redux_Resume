@@ -1,11 +1,6 @@
-import React, { FC } from "react";
-import { IData } from "../../type/types";
+import React from "react";
 
-interface SkillsProps {
-  data: IData;
-}
-
-const Skills: FC<SkillsProps> = ({ data }) => {
+const Skills = ({ data }) => {
   return (
     <div className="container flex-auto">
       <div className="m-4 p-6 shadow-2xl shadow-gray-200 text-[22px]">

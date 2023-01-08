@@ -5,6 +5,7 @@ const ua = {
     about: "Про мене",
     experience: "Досвід",
     skills: "Навички",
+    portfolio: "Портфоліо",
   },
 
   about: {
@@ -88,10 +89,99 @@ const ua = {
   skills: {
     title: "Навыки",
     list: [
-      `
-    HTML, CSS, SCSS, JS,  jQuery, Vue, BEM, Gulp, Git, VS Code, Gimp, Figma
-    `,
+      "HTML, CSS, SCSS",
+      "JS,  jQuery, Vue, React, Redux, TypeScript",
+      "BEM, Gulp, Git",
+      "VS Code,  Figma",
     ],
+  },
+
+  portfolio: {
+    tagsList: [
+      "#Vanilla_JS",
+      "#jQuery",
+      "#Alpine.js",
+      "#React",
+      "#Vue.js",
+      "#Redux",
+      "#TypeScript",
+      "#WordPress",
+      "#Php_Laravel",
+      "#OpenCart",
+      "#css",
+      "#scss",
+      "#Webpack",
+      "#Gulp"
+    ],
+    // "#Tailwind"
+    label: {
+      technologies: "Tехнології",
+      tasks: "Завдання",
+    },
+    portfolioList: {
+      tofaDadashev: {
+        title: "tofaDadashev",
+        url: "https://tofa-dadashev.com",
+        tags: ["#WordPress", "#jQuery", "#css", "#Gulp"],
+      },
+      mammolog: {
+        title: "mammolog",
+        url: "https://mammolog.com.ua",
+        tags: ["#Alpine.js", "#Php_Laravel", "#scss", "#Gulp"],
+      },
+      acmd: {
+        title: "acmd",
+        url: "http://acmd.artyshok.studio",
+        tags: ["#Alpine.js", "#Php_Laravel", "#scss", "#Gulp"],
+      },
+      lazersvit: {
+        title: "lazersvit",
+        url: "https://lazersvit.com",
+        tags: ["#Alpine.js", "#Php_Laravel", "#scss", "#Gulp"],
+      },
+      selera: {
+        title: "selera",
+        url: "https://selera.systems",
+        tags: ["#WordPress", "#Vanilla_JS", "#scss", "#Gulp"],
+      },
+      hypeGeneration: {
+        title: "hypeGeneration",
+        url: "#",
+        tags: ["#Alpine.js", "#Php_Laravel", "#scss", "#Gulp"],
+      },
+      institutven: {
+        title: "institutven",
+        url: "#",
+        tags: ["#Alpine.js", "#Php_Laravel", "#scss", "#Gulp"],
+      },
+      kinoshniki: {
+        title: "kinoshniki",
+        url: "#",
+        tags: ["#Vue.js", "#Php_Laravel", "#scss", "#Webpack"],
+      },
+      magazinShashlyka: {
+        title: "magazinShashlyka",
+        url: "https://www.magazin-shashlyka.com.ua",
+        tags: ["#Vanilla_JS", "#OpenCart", "#scss", "#Gulp"],
+      },
+      artMarks: {
+        title: "artMarks",
+        url: "https://art-marks.com",
+        tags: ["#WordPress", "#jQuery", "#css", "#Gulp"],
+      },
+      ispace: {
+        title: "ispace",
+        url: "https://ispace.news",
+        tags: [
+          "#Vanilla_JS",
+          "#React",
+          "#TypeScript",
+          "#Php_Laravel",
+          "#scss",
+          "#Webpack",
+        ],
+      },
+    },
   },
 };
 

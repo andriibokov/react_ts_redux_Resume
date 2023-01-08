@@ -5,6 +5,7 @@ const eng = {
     about: "About me",
     experience: "Experience",
     skills: "Skills",
+    portfolio: "Portfolio",
   },
 
   about: {
@@ -88,9 +89,10 @@ const eng = {
   skills: {
     title: "Навыки",
     list: [
-      `
-    HTML, CSS, SCSS, JS,  jQuery, Vue, BEM, Gulp, Git, VS Code, Gimp, Figma
-    `,
+      "HTML, CSS, SCSS",
+      "JS,  jQuery, Vue, React, Redux, TypeScript",
+      "BEM, Gulp, Git",
+      "VS Code,  Figma",
     ],
   },
 };

@@ -34,6 +34,9 @@ module.exports = {
       gray: "#33425b",
       grayHover: "#bdbdbf4d",
     },
+    gridTemplateColumns: {
+      "portfolio1-1": "1fr 1fr",
+    },
   },
   plugins: [],
 };
