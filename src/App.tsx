@@ -8,7 +8,7 @@ import { dataLanguages } from "./languages/languages";
 import { dataType } from "./types/data";
 import { useTypedSelector } from "./hooks/useTypedSelector";
 import { setPortfolio } from "./redux/action/portfolioAction";
-import { portfolioType } from "./types/portfolio";
+import NumberColumn from "./components/numberColumn";
 
 function App() {
   const data = useTypedSelector((state: dataType) => state?.data?.data);
@@ -31,7 +31,10 @@ function App() {
   return (
     <div className="flex flex-1 flex-col">
       <Header data={data?.tittlePage} />
-      <RouterList data={data} portfolio={portfolio} />
+      <div className="grid grid-cols-[auto,_1fr] flex-1">
+        <NumberColumn/>
+        <RouterList data={data} portfolio={portfolio} />
+      </div>
     </div>
   );
 };

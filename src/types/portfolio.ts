@@ -1,7 +1,6 @@
 
 export enum portfolioActionType {
   SET_PORTFOLIO = "SET_PORTFOLIO",
-  FILTER_PORTFOLIO = "FILTER_PORTFOLIO",
 }
 
 export interface portfolioActionSet {
@@ -9,12 +8,7 @@ export interface portfolioActionSet {
   payload: any;
 }
 
-export interface portfolioActionFilterTags {
-  type: portfolioActionType.FILTER_PORTFOLIO;
-  payload: any;
-}
-
-export type portfolioAction = portfolioActionSet | portfolioActionFilterTags;
+export type portfolioAction = portfolioActionSet;
 
 export interface portfolioType {
   tagsList: any[];

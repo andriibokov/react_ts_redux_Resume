@@ -20,12 +20,17 @@ const RouterList = ({ data, portfolio }) => {
           <PortfolioList
             data={portfolio?.portfolioList}
             tags={portfolio?.tagsList}
+            constants={data?.constants}
           />
         }
       />
       <Route
         path="portfolio/:id"
-        element={<PortfolioItem data={data?.portfolio} />}
+        element={
+          <PortfolioItem
+            data={data?.portfolio}
+            constants={data?.constants}
+          />}
       />
       <Route>404 Not Found!</Route>
     </Routes>

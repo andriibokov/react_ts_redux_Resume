@@ -8,6 +8,19 @@ const ua = {
     portfolio: "Портфоліо",
   },
 
+  constants: {
+    buttons: {
+      back: "Назад",
+    },
+    empty: {
+      loading: "Завантаження...",
+    },
+    label: {
+      technologies: "Tехнології",
+      tasks: "Завдання",
+    },
+  },
+
   about: {
     title: "Інформація про мене",
 
@@ -98,88 +111,85 @@ const ua = {
 
   portfolio: {
     tagsList: [
-      "#Vanilla_JS",
-      "#jQuery",
-      "#Alpine.js",
-      "#React",
-      "#Vue.js",
-      "#Redux",
-      "#TypeScript",
-      "#WordPress",
-      "#Php_Laravel",
-      "#OpenCart",
-      "#css",
-      "#scss",
-      "#Webpack",
-      "#Gulp"
+      "All",
+      "Vanilla_JS",
+      "jQuery",
+      "Alpine.js",
+      "React",
+      "Vue.js",
+      "TypeScript",
+      "WordPress",
+      "Php_Laravel",
+      "OpenCart",
+      "css",
+      "scss",
+      "Webpack",
+      "Gulp",
     ],
-    // "#Tailwind"
-    label: {
-      technologies: "Tехнології",
-      tasks: "Завдання",
-    },
+    // "Tailwind"
     portfolioList: {
       tofaDadashev: {
         title: "tofaDadashev",
         url: "https://tofa-dadashev.com",
-        tags: ["#WordPress", "#jQuery", "#css", "#Gulp"],
+        tags: ["WordPress", "jQuery", "css", "Gulp"],
+        tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       mammolog: {
         title: "mammolog",
         url: "https://mammolog.com.ua",
-        tags: ["#Alpine.js", "#Php_Laravel", "#scss", "#Gulp"],
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       acmd: {
         title: "acmd",
         url: "http://acmd.artyshok.studio",
-        tags: ["#Alpine.js", "#Php_Laravel", "#scss", "#Gulp"],
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       lazersvit: {
         title: "lazersvit",
         url: "https://lazersvit.com",
-        tags: ["#Alpine.js", "#Php_Laravel", "#scss", "#Gulp"],
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       selera: {
         title: "selera",
         url: "https://selera.systems",
-        tags: ["#WordPress", "#Vanilla_JS", "#scss", "#Gulp"],
+        tags: ["WordPress", "Vanilla_JS", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       hypeGeneration: {
         title: "hypeGeneration",
-        url: "#",
-        tags: ["#Alpine.js", "#Php_Laravel", "#scss", "#Gulp"],
+        url: "",
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       institutven: {
         title: "institutven",
-        url: "#",
-        tags: ["#Alpine.js", "#Php_Laravel", "#scss", "#Gulp"],
+        url: "",
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       kinoshniki: {
         title: "kinoshniki",
-        url: "#",
-        tags: ["#Vue.js", "#Php_Laravel", "#scss", "#Webpack"],
+        url: "",
+        tags: ["Vue.js", "Php_Laravel", "scss", "Webpack"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       magazinShashlyka: {
         title: "magazinShashlyka",
         url: "https://www.magazin-shashlyka.com.ua",
-        tags: ["#Vanilla_JS", "#OpenCart", "#scss", "#Gulp"],
+        tags: ["Vanilla_JS", "OpenCart", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       artMarks: {
         title: "artMarks",
         url: "https://art-marks.com",
-        tags: ["#WordPress", "#jQuery", "#css", "#Gulp"],
+        tags: ["WordPress", "jQuery", "css", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       ispace: {
         title: "ispace",
         url: "https://ispace.news",
         tags: [
-          "#Vanilla_JS",
-          "#React",
-          "#TypeScript",
-          "#Php_Laravel",
-          "#scss",
-          "#Webpack",
-        ],
+          "Vanilla_JS",
+          "React",
+          "TypeScript",
+          "Php_Laravel",
+          "scss",
+          "Webpack",
+        ],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
     },
   },

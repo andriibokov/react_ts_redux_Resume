@@ -1,3 +1,5 @@
+const plugin = require("tailwindcss/plugin"); 
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -31,12 +33,16 @@ module.exports = {
         500: "#6F46C7",
         900: "#4C2C91",
       },
-      gray: "#33425b",
+      gray: "#333333",
       grayHover: "#bdbdbf4d",
     },
     gridTemplateColumns: {
       "portfolio1-1": "1fr 1fr",
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant("current", "&.active");
+    }),
+  ],
 };

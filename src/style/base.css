@@ -15,10 +15,11 @@ html {
 body {
   font-weight: 400;
   font-size: 16px;
-  color: black;
+  color: #b7b7b7;
   overflow-x: hidden;
   background: w;
   height: 100%;
+  background-color: #d3c89c;
 }
 
 textarea,
@@ -87,10 +88,21 @@ img {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: #363636;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 0;
 }
-
-.App {
-  display: flex;
-  flex-direction: column;
-  flex: 1;
+#root:before {
+  content: "";
+  height: 93%;
+  position: absolute;
+  width: 50%;
+  z-index: -1;
+  background: #55513e;
+   box-shadow: -7px -6px 7px #55513e;
+  left: -7px;
+  top: 20px;
+  transform: rotate(-3.5deg);
 }

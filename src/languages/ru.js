@@ -8,6 +8,19 @@ const ru = {
     portfolio: "Портфолио",
   },
 
+  constants: {
+    buttons: {
+      back: "Назад",
+    },
+    empty: {
+      loading: "Загрузка...",
+    },
+    label: {
+      technologies: "Tехнологии",
+      tasks: "Задачи",
+    },
+  },
+
   about: {
     title: "Информация обо мне",
 
@@ -94,6 +107,101 @@ const ru = {
       "BEM, Gulp, Git",
       "VS Code,  Figma",
     ],
+  },
+
+  portfolio: {
+    tagsList: [
+      "All",
+      "Vanilla_JS",
+      "jQuery",
+      "Alpine.js",
+      "React",
+      "Vue.js",
+      "TypeScript",
+      "WordPress",
+      "Php_Laravel",
+      "OpenCart",
+      "css",
+      "scss",
+      "Webpack",
+      "Gulp",
+    ],
+    // "Tailwind"
+    portfolioList: {
+      tofaDadashev: {
+        title: "tofaDadashev",
+        url: "https://tofa-dadashev.com",
+        tags: ["WordPress", "jQuery", "css", "Gulp"],
+        tasks: ["Уже скоро тут появится всё поставленные задачи"],
+      },
+      mammolog: {
+        title: "mammolog",
+        url: "https://mammolog.com.ua",
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],
+        tasks: ["Уже скоро тут появится всё поставленные задачи"],
+      },
+      acmd: {
+        title: "acmd",
+        url: "http://acmd.artyshok.studio",
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],
+        tasks: ["Уже скоро тут появится всё поставленные задачи"],
+      },
+      lazersvit: {
+        title: "lazersvit",
+        url: "https://lazersvit.com",
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],
+        tasks: ["Уже скоро тут появится всё поставленные задачи"],
+      },
+      selera: {
+        title: "selera",
+        url: "https://selera.systems",
+        tags: ["WordPress", "Vanilla_JS", "scss", "Gulp"],
+        tasks: ["Уже скоро тут появится всё поставленные задачи"],
+      },
+      hypeGeneration: {
+        title: "hypeGeneration",
+        url: "",
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],
+        tasks: ["Уже скоро тут появится всё поставленные задачи"],
+      },
+      institutven: {
+        title: "institutven",
+        url: "",
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],
+        tasks: ["Уже скоро тут появится всё поставленные задачи"],
+      },
+      kinoshniki: {
+        title: "kinoshniki",
+        url: "",
+        tags: ["Vue.js", "Php_Laravel", "scss", "Webpack"],
+        tasks: ["Уже скоро тут появится всё поставленные задачи"],
+      },
+      magazinShashlyka: {
+        title: "magazinShashlyka",
+        url: "https://www.magazin-shashlyka.com.ua",
+        tags: ["Vanilla_JS", "OpenCart", "scss", "Gulp"],
+        tasks: ["Уже скоро тут появится всё поставленные задачи"],
+      },
+      artMarks: {
+        title: "artMarks",
+        url: "https://art-marks.com",
+        tags: ["WordPress", "jQuery", "css", "Gulp"],
+        tasks: ["Уже скоро тут появится всё поставленные задачи"],
+      },
+      ispace: {
+        title: "ispace",
+        url: "https://ispace.news",
+        tags: [
+          "Vanilla_JS",
+          "React",
+          "TypeScript",
+          "Php_Laravel",
+          "scss",
+          "Webpack",
+        ],
+        tasks: ["Уже скоро тут появится всё поставленные задачи"],
+      },
+    },
   },
 };
 

@@ -6,30 +6,30 @@ import { dataType } from "../../types/data";
 const Header: FC<dataType> = ({ data }) => {
   
   return (
-    <header className={"bg-gray text-white py-10"}>
+    <header className={"bg-gray text-white py-2"}>
       <div className={"flex justify-between container"}>
         <nav>
           <ul className="flex flex-row">
             <li>
-              <NavLink className="p-4 rounded hover:bg-grayHover" to="/">
+              <NavLink className="px-2 py-1 rounded hover:bg-grayHover" to="/">
                 {data?.about}
               </NavLink>
             </li>
             <li className="ml-1">
               <NavLink
-                className="p-4 rounded hover:bg-grayHover"
+                className="px-2 py-1 rounded hover:bg-grayHover"
                 to="experience"
               >
                 {data?.experience}
               </NavLink>
             </li>
             <li className="ml-1">
-              <NavLink className="p-4 rounded hover:bg-grayHover" to="skills">
+              <NavLink className="px-2 py-1 rounded hover:bg-grayHover" to="skills">
                 {data?.skills}
               </NavLink>
             </li>
             <li className="ml-1">
-              <NavLink className="p-4 rounded hover:bg-grayHover" to="portfolio">
+              <NavLink className="px-2 py-1 rounded hover:bg-grayHover" to="portfolio">
                 {data?.portfolio}
               </NavLink>
             </li>

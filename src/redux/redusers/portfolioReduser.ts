@@ -3,8 +3,8 @@ import { portfolioAction, portfolioActionType, portfolioType } from './../../typ
 const initialSatae = {
   tagsList: [],
   label: {},
-  portfolioList: {}
-}
+  portfolioList: {},
+};
 
 
 export const portfolioReduser = ( state = initialSatae, action: portfolioAction ): portfolioType => {
@@ -15,11 +15,6 @@ export const portfolioReduser = ( state = initialSatae, action: portfolioAction 
           tagsList: action.payload.tagsList,
           label: action.payload.label,
           portfolioList: action.payload.portfolioList,
-        };
-      case portfolioActionType.FILTER_PORTFOLIO:
-        return {
-          ...state,
-          portfolioList: action.payload,
         };
       default:
         return state;
