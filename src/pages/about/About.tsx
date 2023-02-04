@@ -6,7 +6,15 @@ const About: FC<dataType> = ({ data }) => {
   return (
     <main className="container">
       <div className="">
-        <h2 className="my-3">{data?.title}</h2>
+        <p className="text-[#fbed9a] text-[82px] font-bold">
+          <span className="text-[#60dfe2] text-[82px] font-bold">&#60;</span>
+          CV
+          <span className="text-[#60dfe2] text-[82px] font-bold">&#62;</span>
+        </p>
+        <h2 className="my-3 text-[28px] text-[#dd8888]">
+          <span className="text-[#60dfe2] text-[28px] font-bold">/ </span>
+          {data?.title}
+        </h2>
         <div>
           {data?.name?.label}
           {data?.name?.value}

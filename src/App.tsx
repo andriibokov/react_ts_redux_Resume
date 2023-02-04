@@ -3,12 +3,12 @@ import { useDispatch } from "react-redux";
 import { setData } from "./redux/action/dataActions";
 
 import Header from "./components/header/Header";
-import RouterList from "./constants/routers/RouterList";
 import { dataLanguages } from "./languages/languages";
 import { dataType } from "./types/data";
 import { useTypedSelector } from "./hooks/useTypedSelector";
 import { setPortfolio } from "./redux/action/portfolioAction";
 import NumberColumn from "./components/numberColumn";
+import RouterList from "./constants/routers/RouterList";
 
 function App() {
   const data = useTypedSelector((state: dataType) => state?.data?.data);
@@ -32,7 +32,7 @@ function App() {
     <div className="flex flex-1 flex-col">
       <Header data={data?.tittlePage} />
       <div className="grid grid-cols-[auto,_1fr] flex-1">
-        <NumberColumn/>
+        <NumberColumn />
         <RouterList data={data} portfolio={portfolio} />
       </div>
     </div>

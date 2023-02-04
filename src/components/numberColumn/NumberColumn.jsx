@@ -1,26 +1,16 @@
-import React, { createRef, useEffect, useState } from "react";
+import React from "react";
 
 const NumberColumn = () => {
-  const numberBox = createRef();
-  const [height, setHeight] = useState(null)
-
-  useEffect(() => {
-    setHeight(numberBox.current.getBoundingClientRect().height)
-  }, [numberBox]);
-
-  const getAnimalsContent = () => {
-    if (Math.round(height / 28) <= 0 ) return;
-    console.log(Math.round(height / 28));
-    let numberArray = [];
-    for (let i = 1; i <= 31; i++) {
-      numberArray.push(<span  key={i} className="leading-[100%] text-[18px] p-[5px] text-right">{i}</span>);
+  const setNumberList = () => {
+    const array =[];
+    for (let i = 1; i < 100; i++) {
+        array.push(<span key={i} className="text-right text-[18px] px-[5px]">{i}</span>);
     }
-    return numberArray;
-  };
-
+    return array;
+  }
   return (
-    <div ref={numberBox} className="flex flex-col">
-      {getAnimalsContent()}
+    <div className="flex relative overflow-hidden w-[50px] h-100%">
+      <div className="flex flex-col pl-[8px] absolute ">{setNumberList()}</div>
     </div>
   );
 };
