@@ -1,19 +1,12 @@
 import { Routes, Route } from "react-router-dom";
-import About from "../../pages/about";
-import Experience from "../../pages/experience";
-import Skills from "../../pages/skills";
+import Home from "../../pages/home";
 import PortfolioList from "../../pages/portfolio";
 import PortfolioItem from "../../pages/portfolioItem";
 
 const RouterList = ({ data, portfolio }) => {
   return (
     <Routes>
-      <Route path="/" element={<About data={data?.about} />} />
-      <Route
-        path="experience"
-        element={<Experience data={data?.experience} />}
-      />
-      <Route path="skills" element={<Skills data={data?.skills} />} />
+      <Route path="/" element={<Home data={data?.about} />} />
       <Route
         path="portfolio"
         element={

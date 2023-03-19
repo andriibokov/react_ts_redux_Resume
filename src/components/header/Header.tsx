@@ -11,25 +11,18 @@ const Header: FC<dataType> = ({ data }) => {
         <nav>
           <ul className="flex flex-row">
             <li>
-              <NavLink className="px-2 py-1 rounded hover:bg-grayHover" to="/">
+              <NavLink
+                className="px-2 py-1 rounded hover:bg-grayHover [&.active]:bg-grayHover"
+                to="/"
+              >
                 {data?.about}
               </NavLink>
             </li>
             <li className="ml-1">
               <NavLink
-                className="px-2 py-1 rounded hover:bg-grayHover"
-                to="experience"
+                className="px-2 py-1 rounded hover:bg-grayHover [&.active]:bg-grayHover"
+                to="portfolio"
               >
-                {data?.experience}
-              </NavLink>
-            </li>
-            <li className="ml-1">
-              <NavLink className="px-2 py-1 rounded hover:bg-grayHover" to="skills">
-                {data?.skills}
-              </NavLink>
-            </li>
-            <li className="ml-1">
-              <NavLink className="px-2 py-1 rounded hover:bg-grayHover" to="portfolio">
                 {data?.portfolio}
               </NavLink>
             </li>

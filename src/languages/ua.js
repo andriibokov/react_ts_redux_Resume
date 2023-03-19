@@ -25,88 +25,92 @@ const ua = {
     title: "Інформація про мене",
 
     name: {
-      label: "ИО: ",
-      value: "Андрей Геннадиевич",
+      value: "Андрій Геннадійович",
+      specialty: "Front-end developer",
     },
 
     date: {
-      label: "Дата рождения: ",
-      value: `10 февраля 1990 года ( ${calculate_age(
+      label: "Дата народження: ",
+      value: `10 лютого 1990 року ( ${calculate_age(
         new Date(1990, 2, 10)
-      )} год)`,
+      )} роки)`,
     },
 
     married: {
-      label: "Семейное положение: ",
-      value: "женат",
+      label: "Сімейний стан: ",
+      value: "одружений",
     },
 
     education: {
-      title: "Образование: ",
+      title: "Освіта: ",
       list: [
         {
-          label: "Среднее образование: ",
-          list: ["1997-2008 г. Середина-Буда ЗОШ№1."],
+          label: "Середня освіта: ",
+          list: ["1997-2008 м. Середина-Буда ЗОШ №1."],
         },
         {
-          label: "Высшее образование: ",
+          label: "Вища освіта: ",
           list: [
-            "2008-2013 г. Харьков ХНУРЭ Специальность: Метрология, стандартизация и сертификация. Дипломированный специалист.",
+            "2008-2013 м. Харків ХНУРЕ Спеціальність: Метрологія, стандартизація та сертифікація",
           ],
-        },
-        {
-          label: "Самообразование: ",
-          list: ["2020 -  наст. время Изучение IT направления"],
         },
       ],
     },
-  },
 
-  experience: {
-    title: "Опыт работы",
-    list: [
-      {
-        label:
-          "2014-2017 г. Харьков Оператор Call-Center магазин MotoStyle и Shlem",
-        text: [
-          "Обработка заказов, оформленных на сайте, проём звонков, работа с проблемными заказами, обучение новых сотрудников.",
-        ],
-      },
-      {
-        label:
-          "2018-2019 Польша г. Гданьск монтер металлических конструкций и труб",
-        text: [
-          "Монтаж конструкций согласно чертежам, работа стропальщиком, контроль соблюдения техники безопасности, обучение сотрудников.",
-        ],
-      },
-      {
-        label: "03.2020 - 10.2020 Freelance Front-end разработчик.",
-        text: ["Вёрска сайтов (HTML, SCSS, BEM, Gulp, Git, Figma, JS, jQuery)"],
-      },
-      {
-        label: "11.2020 - наст. время веб студия, Front-end разработчик,",
-        text: [
-          `Вёрстка новых проектов (SCSS, HTML5, BEM, Gulp, Figma, Git);
-          Новые проекты Front-end (js, jQuery);
-          Новые проекты Back-end (wordpress);
-          Работа над существеющими проектами:
-          - вёрстка,
-          - Front-end (vue, react, js, jQuery),
-          - Back-end (OpenCart),
-          - Оптимизация скорости загрузки сайта;`,
-        ],
-      },
-    ],
-  },
+    skills: {
+      title: "Навички",
+      list: [
+        "HTML, CSS, SCSS",
+        "JS,  jQuery, Vue, React, Redux, TypeScript",
+        "BEM, Gulp, Git",
+        "VS Code,  Figma",
+      ],
+    },
 
-  skills: {
-    title: "Навыки",
-    list: [
-      "HTML, CSS, SCSS",
-      "JS,  jQuery, Vue, React, Redux, TypeScript",
-      "BEM, Gulp, Git",
-      "VS Code,  Figma",
-    ],
+    experience: {
+      title: "Досвід роботи",
+      list: [
+        {
+          label: {
+            name: "г. Харьков веб студия, Front-end разработчик",
+            time: "11.2020 - наст. время",
+          },
+          text: [
+            "Вёрстка новых проектов (SCSS, HTML5, BEM, Gulp, Figma, Git);",
+            "Новые проекты Front-end (js, jQuery);",
+            "Новые проекты Back-end (wordpress);",
+            "Оптимизация скорости загрузки сайта;",
+          ],
+        },
+        {
+          label: {
+            name: "Freelance Front-end developer.",
+            time: "03.2020 - 10.2020",
+          },
+          text: [
+            "Вёрска сайтов (HTML, SCSS, BEM, Gulp, Git, Figma, JS, jQuery)",
+          ],
+        },
+        {
+          label: {
+            name: "Польша г. Гданьск монтер металлических конструкций и труб",
+            time: "2018-2019",
+          },
+          text: [
+            "Монтаж конструкций согласно чертежам, работа стропальщиком, контроль соблюдения техники безопасности, обучение сотрудников.",
+          ],
+        },
+        {
+          label: {
+            name: "г. Харьков Оператор Call-Center магазин MotoStyle и Shlem",
+            time: "2014-2017",
+          },
+          text: [
+            "Обработка заказов, оформленных на сайте, проём звонков, работа с проблемными заказами, обучение новых сотрудников.",
+          ],
+        },
+      ],
+    },
   },
 
   portfolio: {
@@ -137,47 +141,56 @@ const ua = {
       mammolog: {
         title: "mammolog",
         url: "https://mammolog.com.ua",
-        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],
+        tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       acmd: {
         title: "acmd",
         url: "http://acmd.artyshok.studio",
-        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],
+        tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       lazersvit: {
         title: "lazersvit",
         url: "https://lazersvit.com",
-        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],
+        tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       selera: {
         title: "selera",
         url: "https://selera.systems",
-        tags: ["WordPress", "Vanilla_JS", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
+        tags: ["WordPress", "Vanilla_JS", "scss", "Gulp"],
+        tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       hypeGeneration: {
         title: "hypeGeneration",
         url: "",
-        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],
+        tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       institutven: {
         title: "institutven",
         url: "",
-        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
+        tags: ["Alpine.js", "Php_Laravel", "scss", "Gulp"],
+        tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       kinoshniki: {
         title: "kinoshniki",
         url: "",
-        tags: ["Vue.js", "Php_Laravel", "scss", "Webpack"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
+        tags: ["Vue.js", "Php_Laravel", "scss", "Webpack"],
+        tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       magazinShashlyka: {
         title: "magazinShashlyka",
         url: "https://www.magazin-shashlyka.com.ua",
-        tags: ["Vanilla_JS", "OpenCart", "scss", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
+        tags: ["Vanilla_JS", "OpenCart", "scss", "Gulp"],
+        tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       artMarks: {
         title: "artMarks",
         url: "https://art-marks.com",
-        tags: ["WordPress", "jQuery", "css", "Gulp"],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
+        tags: ["WordPress", "jQuery", "css", "Gulp"],
+        tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
       ispace: {
         title: "ispace",
@@ -189,7 +202,8 @@ const ua = {
           "Php_Laravel",
           "scss",
           "Webpack",
-        ],tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
+        ],
+        tasks: ["Вже скоро тут з'явиться всі поставлені завдання"],
       },
     },
   },
