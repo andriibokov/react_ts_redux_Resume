@@ -3,7 +3,6 @@ import { Link, useParams } from "react-router-dom";
 
 const PortfolioItem = ({ data, constants }) => {
   const id = useParams().id;
-  const label = data?.label;
   const portfolioList = data?.portfolioList;
   const portfolio = portfolioList?.[id];
   return (
@@ -23,7 +22,7 @@ const PortfolioItem = ({ data, constants }) => {
           {portfolio?.title}
         </a>
       </h2>
-      <div className="grid grid-cols-portfolio1-1 gap-20">
+      <div className="grid lg:grid-cols-portfolio1-1 gap-20">
         <img src={`../images/${portfolio?.title}.png`} alt={portfolio?.title} />
         <div className="flex flex-col">
           <h4 className="text-xl font-medium mb-4">

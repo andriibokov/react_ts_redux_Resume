@@ -20,7 +20,12 @@ body {
   overflow-x: hidden;
   min-height: 100vh;
   background-color: #d3c89c;
-  padding: 40px 0;
+}
+
+@media screen and (min-width: 769px) {
+  body {
+    padding: 40px 0;
+  }
 }
 
 textarea,

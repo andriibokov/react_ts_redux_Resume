@@ -15,16 +15,16 @@ const PortfolioList = ({ data, tags, constants }) => {
     setFilterPortfolio(filtredArray);
   };
   return (
-    <div className="container mt-10">
+    <div className="container mt-4 pb-4 lg:mt-10 lg:pb-10">
       <div>
-        <ul className="flex flex-wrap mb-10">
+        <ul className="flex flex-wrap mb-6 md:mb-10">
           {tags?.map((tag) => {
             return (
               <li key={tag}>
                 <Button
                   className={classNames(
                     { active: active === tag },
-                    "hover:bg-gray-100 hover:shadow py-1 px-2 mx-1 border current:text-red-500"
+                    "hover:bg-gray-100 hover:shadow py-0.3 px-1 lg:py-1 lg:px-2 mx-1 border current:text-red-500"
                   )}
                   onClick={() => filterTags(tag)}
                 >
@@ -35,7 +35,9 @@ const PortfolioList = ({ data, tags, constants }) => {
           })}
         </ul>
       </div>
-      <ul className="grid grid-cols-portfolio1-1 gap-6">
+      <ul
+        className="grid gap-4 md:grid-cols-portfolio1-1 md:gap-6"
+      >
         {!data
           ? constants?.empty?.loading
           : (filterPortfolio || Object.values(data))?.map((item, index) => {

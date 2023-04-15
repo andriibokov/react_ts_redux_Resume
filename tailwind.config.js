@@ -5,17 +5,16 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     screens: {
-      sm: "640px",
+      sm: "100%",
       md: "768px",
       lg: "1024px",
-      xl: "1024px",
-      "2xl": "1024px",
+      xl: "1280px",
     },
     container: {
       center: true,
       padding: {
         DEFAULT: "10px",
-        "2xl": "15px",
+        xl: "15px",
       },
     },
     colors: {
@@ -43,6 +42,13 @@ module.exports = {
   plugins: [
     plugin(function ({ addVariant }) {
       addVariant("current", "&.active");
+    }),
+    plugin(function ({ addComponents }) {
+      addComponents({
+        ".test": {
+          fontSize: "32px",
+        }
+      });
     }),
   ],
 };
